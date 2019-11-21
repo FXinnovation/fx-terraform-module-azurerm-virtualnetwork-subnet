@@ -1,10 +1,6 @@
-data "azurerm_resource_group" "netrg" {
-  name = var.resource_group_name
-}
-
 resource "azurerm_subnet" "this" {
   for_each             = var.subnets
-  resource_group_name  = data.azurerm_resource_group.netrg.name
+  resource_group_name  = var.resource_group_name
   virtual_network_name = var.virtual_network_name
   name                 = each.value["name"]
   address_prefix       = each.value["address_prefix"]
