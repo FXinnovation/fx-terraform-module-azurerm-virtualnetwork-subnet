@@ -8,18 +8,7 @@ variable "virtual_network_name" {
   type        = string
 }
 
-variable "subnetsCfg" {
+variable "subnets_config" {
   description = "Object containing deployment information for subnets."
   type        = any
-  default = {
-    subnet1 = {
-      name              = "subnet1"                              #(Mandatory)
-      address_prefix    = "10.0.1.0/24"                          #(Mandatory)
-      service_endpoints = ["Microsoft.Sql", "Microsoft.Storage"] #(Optional) delete this line for no Service Endpoints
-    }
-    subnet2 = {
-      name           = "subnet2"     #(Mandatory)
-      address_prefix = "10.0.2.0/24" #(Mandatory)
-    }
-  }
 }
