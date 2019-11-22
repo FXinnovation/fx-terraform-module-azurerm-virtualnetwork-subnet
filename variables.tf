@@ -15,8 +15,6 @@ variable "subnetsCfg" {
     subnet1 = {
       name              = "subnet1"                              #(Mandatory)
       address_prefix    = "10.0.1.0/24"                          #(Mandatory)
-      nsg_key           = "nsg1"                                 #(Optional) delete this line for no NSG
-      rt_key            = "rt1"                                  #(Optional) delete this line for no Route Table
       service_endpoints = ["Microsoft.Sql", "Microsoft.Storage"] #(Optional) delete this line for no Service Endpoints
     }
     subnet2 = {
