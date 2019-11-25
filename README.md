@@ -1,5 +1,9 @@
 # terraform-module-azurerm-virtualnetwork-subnet
 
+## Usage
+
+This module is used to deploy multiple subnets inside a virtual network and configure for each subnets their service endpoints and their delegations.
+
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Inputs
 
@@ -20,3 +24,11 @@
 | subnets\_ids\_map | Map with names and IDs of the created subnets |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
+## Examples
+
+Usage example is found in the `./examples/default/` folder.
+
+## Inspec
+
+No Inspec tests are done for this module.
