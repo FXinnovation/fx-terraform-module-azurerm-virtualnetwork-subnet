@@ -13,7 +13,7 @@ resource "azurerm_subnet" "this" {
   }
 
   dynamic "delegation" {
-    for_each = lookup(each.value["delegation"], "delegation", [])
+    for_each = lookup(each.value, "delegation", [])
     content {
       name = lookup(delegation.value, "name", null)
       dynamic "service_delegation" {
