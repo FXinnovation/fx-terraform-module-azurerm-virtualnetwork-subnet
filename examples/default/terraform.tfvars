@@ -1,4 +1,4 @@
-resource_group_name = "fxcozca1dgenrg001"
+resource_group_name = "fxcozca1dgenrg003"
 location            = "canadacentral"
 vnet_name           = "fxcozca1dgenvn001"
 vnet_address_space  = ["10.0.0.0/16"]
