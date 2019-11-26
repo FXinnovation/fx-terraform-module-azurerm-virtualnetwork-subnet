@@ -1,3 +1,7 @@
+#####
+# Resources
+#####
+
 resource "azurerm_subnet" "this" {
   for_each             = var.subnets_config
   resource_group_name  = var.resource_group_name
