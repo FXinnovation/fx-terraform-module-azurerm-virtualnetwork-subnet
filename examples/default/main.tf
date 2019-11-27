@@ -22,7 +22,8 @@ module "az-subnets-demo" {
 }
 
 module "az-nsg-demo" {
-  source                         = "git::ssh://git@scm.dazzlingwrench.fxinnovation.com:2222/fxinnovation-public/terraform-module-azurerm-networksecuritygroup.git?ref=v0.1"
+#  source                         = "git::ssh://git@scm.dazzlingwrench.fxinnovation.com:2222/fxinnovation-public/terraform-module-azurerm-networksecuritygroup.git?ref=v0.1"
+  source = "../../../terraform-module-azurerm-networksecuritygroup/"
   resource_group_name            = module.az-rg-demo.name
   subnets_config                 = var.subnets_config
   network_security_groups_config = var.network_security_groups_config

@@ -91,6 +91,10 @@ variable "subnets_config" {
           ]
         },
       ]
+    },
+    subnet4 = {
+      name           = "subnet4"
+      address_prefix = "10.0.4.0/24"
     }
   }
 }
