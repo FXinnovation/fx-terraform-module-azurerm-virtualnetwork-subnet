@@ -9,6 +9,7 @@ This module is used to deploy multiple subnets inside a virtual network and conf
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
+| enabled | Enable or disable module. | string | `"true"` | no |
 | resource\_group\_name | Name of the resource group where the vnet is hosted. | string | n/a | yes |
 | subnets\_config | Object containing deployment information for subnets. | any | n/a | yes |
 | virtual\_network\_name | Name of the virtual network where the subnets will reside in. | string | n/a | yes |
